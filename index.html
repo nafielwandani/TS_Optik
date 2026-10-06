@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TS Optik — Sahabat Mata Anda. Kacamata, lensa, dan perawatan mata yang nyaman dan terpercaya.">
+    <title>TS Optik — Sahabat Mata Anda</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.css">
+
+    <!-- Custom theme -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-ts sticky-top">
+    <div class="container">
+        <a href="#hero" class="navbar-brand">
+            <span class="brand-mark"><i class="bi bi-eyeglasses"></i></span>
+            <span class="brand-text"><span>TS</span>Optik</span>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarToko"
+                aria-controls="navbarToko" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToko">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#product" class="nav-link">Product</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-2 nav-actions">
+                <button class="btn nav-icon-btn position-relative" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#keranjang" aria-label="Keranjang">
+                    <i class="bi bi-bag"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill cart-badge">3</span>
+                </button>
+                <button class="btn nav-icon-btn" type="button" aria-label="Cari">
+                    <i class="bi bi-search"></i>
+                </button>
+                <button class="btn btn-navy px-4 ms-1">
+                    <i class="bi bi-person-circle me-1"></i> Login
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= CAROUSEL ================= -->
+<div id="carouselExample" class="carousel slide carousel-fade hero-carousel" data-bs-interval="4000" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="logo.webp" class="d-block w-100 contain" alt="TS Optik — Sahabat Mata Anda">
+        </div>
+        <div class="carousel-item">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlZgT0byek60xaymFeM-KRGGmcIYAv1xDIUUOO0QqOL9dWAUuFq-byUv1L9viCiB0Thm5F2QtQNMwQh2DZ4unrutpjvdAdODUVSWG-HF2reTKc6sW6EPImN6s2MJ5dHsfUi2HrVAQPZU6pM=s1360-w1360-h1020-rw" class="d-block w-100" alt="Suasana toko TS Optik" loading="lazy">
+        </div>
+        <div class="carousel-item">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmmyEOzEddmlcDTx2S_xdtTgtNO2kT1c03ubO2DLdw_ERxW0Yvqne4xrgDnec6TIE0OYJ2H_d7oXqDiNbyvgacaiU2_gEyy6lLEre7oKYVBBtBE5MpvmyUAFwzkGuDFLOs4JuC4cKWA23te=s1360-w1360-h1020-rw" class="d-block w-100" alt="Koleksi kacamata TS Optik" loading="lazy">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- ================= HERO ================= -->
+<section id="hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-12 col-lg-6 hero-text">
+                <span class="eyebrow">Welcome to TS Optik</span>
+                <h1 class="hero-title mb-3">Clear Eyes,<br><em>Confident Life</em></h1>
+                <p class="hero-lead mb-4">Clear vision, comfortable eyewear, and care you can trust.</p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start hero-actions">
+                    <a href="#product" class="btn btn-gold btn-lg px-4"><i class="bi bi-bag-plus me-1"></i> Shop Now</a>
+                    <a href="#product" class="btn btn-outline-navy btn-lg px-4">See Products <i class="bi bi-arrow-down-right ms-1"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="hero-img-wrap">
+                    <img src="ts.jpg" alt="Interior toko TS Optik" width="924" height="550">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section id="product">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="eyebrow">Best Product</span>
+            <h2 class="section-title">Buy Your Favorite Product</h2>
+            <p class="section-sub mt-2 mb-0">Find the best product for you</p>
+            <hr class="divider-gold">
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.salsify.com/image/upload/s--TL0SRs1R--/w_1300,h_1300,q_auto,c_pad,b_rgb:f5f5f5/u8swkbrjcdpryvoevi6l.jpg" alt="Nike Tide Crest" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag">Sunglasses</span>
+                        <h5 class="product-title">Nike Tide Crest</h5>
+                        <p class="product-text">Nike Max Optics provide precise vision from all angles.</p>
+                    </div>
+                    <ul class="product-meta">
+                        <li><i class="bi bi-palette"></i> Frame Color: Burgundy Crush</li>
+                    </ul>
+                    <div class="product-foot">
+                        <button type="button" class="btn btn-outline-navy w-100" data-bs-toggle="modal" data-bs-target="#modalcrest">
+                            <i class="bi bi-eye me-1"></i> See More
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.salsify.com/image/upload/s--9-dy_6-G--/w_1300,h_1300,q_auto,c_pad,b_rgb:f5f5f5/wivmizyyglsqavkd77h1.jpg" alt="Nike Tailwind Heat" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag">Sunglasses</span>
+                        <h5 class="product-title">Nike Tailwind Heat</h5>
+                        <p class="product-text">Nike Max Optics with anti-reflective coating helps reduce light reflection and provides precise vision from all angles.</p>
+                    </div>
+                    <ul class="product-meta">
+                        <li><i class="bi bi-palette"></i> Frame Color: Matte Black</li>
+                    </ul>
+                    <div class="product-foot">
+                        <button type="button" class="btn btn-outline-navy w-100" data-bs-toggle="modal" data-bs-target="#modalheat">
+                            <i class="bi bi-eye me-1"></i> See More
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.salsify.com/image/upload/s--3Np0jtLe--/w_1300,h_1300,q_auto,c_pad,b_rgb:f5f5f5/guoov3faiy1wokxmawxm.jpg" alt="Nike Airelon Force" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag">Sunglasses</span>
+                        <h5 class="product-title">Nike Airelon Force</h5>
+                        <p class="product-text">Nike Max Optics with anti-reflective coating helps reduce light reflection and provides precise vision from all angles.</p>
+                    </div>
+                    <ul class="product-meta">
+                        <li><i class="bi bi-palette"></i> Frame Color: Blue</li>
+                    </ul>
+                    <div class="product-foot">
+                        <button type="button" class="btn btn-outline-navy w-100" data-bs-toggle="modal" data-bs-target="#modalforce">
+                            <i class="bi bi-eye me-1"></i> See More
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= MODALS ================= -->
+<div id="modalcrest" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Nike Tide Crest</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.salsify.com/image/upload/s--TL0SRs1R--/w_1300,h_1300,q_auto,c_pad,b_rgb:f5f5f5/u8swkbrjcdpryvoevi6l.jpg" alt="Nike Tide Crest">
+                <h4 class="fw-semibold">Nike Tide Crest</h4>
+                <p class="text-secondary">Elevate your style with the playful yet refined look of the Nike Tide Crest. Blending modern edge with a Y2K-inspired soft rectangular shape featuring bold color-blocked temples. Lightweight and versatile made to match your evolving style.</p>
+                <span class="price-tag">$95.00</span>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-soft" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-gold"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalheat" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Nike Tailwind Heat</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.salsify.com/image/upload/s--9-dy_6-G--/w_1300,h_1300,q_auto,c_pad,b_rgb:f5f5f5/wivmizyyglsqavkd77h1.jpg" alt="Nike Tailwind Heat">
+                <h4 class="fw-semibold">Nike Tailwind Heat</h4>
+                <p class="text-secondary">The Nike Tailwind Heat brings the same intensity to your run that you do, with a streamlined profile that hugs your face. Pro-level ventilation from lenses to temples helps keep you cool when the miles heat up. Super light, super comfortable, with grippy rubber details that prevent slipping, these sunglasses are perfect for leveling up your personal best.</p>
+                <span class="price-tag">$169.00</span>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-soft" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-gold"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalforce" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Nike Airelon Force</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.salsify.com/image/upload/s--3Np0jtLe--/w_1300,h_1300,q_auto,c_pad,b_rgb:f5f5f5/guoov3faiy1wokxmawxm.jpg" alt="Nike Airelon Force">
+                <h4 class="fw-semibold">Nike Airelon Force</h4>
+                <p class="text-secondary">Born from one of Nike's most iconic eyewear designs, the Nike Airelon Force carries a legendary silhouette into the future. Featuring a semi-rim titanium frame and floating lens design, it delivers an almost weightless experience that seems to disappear in motion. Inspired by the original worn by generations of peak performers, Airelon Force continues its legacy through uncompromising materials, precision engineering, and timeless style.</p>
+                <span class="price-tag">$210.00</span>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-soft" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-gold"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="container">
+    <div class="text-center mb-5">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-sub mt-2 mb-0">Find your answer about TS Optik</p>
+        <hr class="divider-gold">
+    </div>
+
+    <div class="accordion" id="accordionTSOptik">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqone" aria-expanded="false">
+                    Apa benar-benar tanpa bunga?
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="faqone" data-bs-parent="#accordionTSOptik">
+                <div class="accordion-body">Ya. Cicilan = harga dibagi bulan. Tidak ada tambahan biaya.</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqtwo" aria-expanded="false">
+                    Ini halal dan sesuai syariah?
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="faqtwo" data-bs-parent="#accordionTSOptik">
+                <div class="accordion-body">InsyaAllah. Kami gunakan skema jual beli, bukan pinjaman. Harga tetap, akad di awal.</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqthree" aria-expanded="false">
+                    Apakah aman?
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="faqthree" data-bs-parent="#accordionTSOptik">
+                <div class="accordion-body">Sangat aman. Data kamu kami jaga, proses legal, dan diawasi tim kami.</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqfour" aria-expanded="false">
+                    Bisa untuk pelajar/mahasiswa?
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="faqfour" data-bs-parent="#accordionTSOptik">
+                <div class="accordion-body">Bisa! Selama ada bukti pemasukan (misal: orang tua sebagai penjamin).</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer id="about">
+    <div class="container">
+        <div class="row g-4 align-items-center text-center text-md-start">
+            <div class="col-12 col-md-6">
+                <div class="brand-text mb-1"><span class="text-warning">TS</span>Optik</div>
+                <p class="tagline mb-0">Sahabat Mata Anda</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <ul class="list-inline mb-0 text-md-end">
+                    <li class="list-inline-item mx-2"><a href="#hero">Home</a></li>
+                    <li class="list-inline-item mx-2"><a href="#product">Product</a></li>
+                    <li class="list-inline-item mx-2"><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-4">
+        <p class="text-center small mb-0">&copy; 2026 TS Optik. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- ================= CART (OFFCANVAS) ================= -->
+<div class="offcanvas offcanvas-end" id="keranjang" tabindex="-1" aria-labelledby="offcanvaslabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvaslabel">Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+        <div class="d-flex gap-3 cart-item align-items-center">
+            <img src="https://images.salsify.com/image/upload/s--TL0SRs1R--/w_1300,h_1300,q_auto,c_pad,b_rgb:f5f5f5/u8swkbrjcdpryvoevi6l.jpg" width="70" height="70" alt="Nike Tide Crest">
+            <div class="flex-grow-1">
+                <h6>NIKE TIDE CREST</h6>
+                <small class="text-secondary d-block mb-1">$95.00</small>
+                <div class="d-flex gap-2 align-items-center">
+                    <button class="btn btn-sm btn-soft px-2 py-0">-</button>
+                    <span>1</span>
+                    <button class="btn btn-sm btn-soft px-2 py-0">+</button>
+                </div>
+            </div>
+            <button class="btn btn-sm btn-soft text-danger" aria-label="Hapus"><i class="bi bi-trash"></i></button>
+        </div>
+        <hr>
+
+        <div class="d-flex gap-3 cart-item align-items-center">
+            <img src="https://images.salsify.com/image/upload/s--TL0SRs1R--/w_1300,h_1300,q_auto,c_pad,b_rgb:f5f5f5/u8swkbrjcdpryvoevi6l.jpg" width="70" height="70" alt="Nike Tide Crest">
+            <div class="flex-grow-1">
+                <h6>NIKE TIDE CREST</h6>
+                <small class="text-secondary d-block mb-1">$95.00</small>
+                <div class="d-flex gap-2 align-items-center">
+                    <button class="btn btn-sm btn-soft px-2 py-0">-</button>
+                    <span>1</span>
+                    <button class="btn btn-sm btn-soft px-2 py-0">+</button>
+                </div>
+            </div>
+            <button class="btn btn-sm btn-soft text-danger" aria-label="Hapus"><i class="bi bi-trash"></i></button>
+        </div>
+        <hr>
+
+        <div class="d-flex gap-3 cart-item align-items-center">
+            <img src="https://images.salsify.com/image/upload/s--TL0SRs1R--/w_1300,h_1300,q_auto,c_pad,b_rgb:f5f5f5/u8swkbrjcdpryvoevi6l.jpg" width="70" height="70" alt="Nike Tide Crest">
+            <div class="flex-grow-1">
+                <h6>NIKE TIDE CREST</h6>
+                <small class="text-secondary d-block mb-1">$95.00</small>
+                <div class="d-flex gap-2 align-items-center">
+                    <button class="btn btn-sm btn-soft px-2 py-0">-</button>
+                    <span>1</span>
+                    <button class="btn btn-sm btn-soft px-2 py-0">+</button>
+                </div>
+            </div>
+            <button class="btn btn-sm btn-soft text-danger" aria-label="Hapus"><i class="bi bi-trash"></i></button>
+        </div>
+        <hr>
+
+        <div class="cart-summary mb-4">
+            <div class="d-flex justify-content-between mb-1"><span>Subtotal</span><strong>$95.00</strong></div>
+            <div class="d-flex justify-content-between mb-1"><span>Ongkir</span><strong>$20.00</strong></div>
+            <div class="d-flex justify-content-between total"><span>Total</span><strong>$115.00</strong></div>
+        </div>
+
+        <button class="btn btn-gold w-100 btn-lg">
+            <i class="bi bi-credit-card me-1"></i> Check Out
+        </button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
